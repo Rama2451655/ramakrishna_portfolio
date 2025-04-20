@@ -1,0 +1,88 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+a { color: #00f0ff; text-decoration: none; }
+header {
+  background: #0f172a;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+}
+.hero-text h1 {
+  font-size: 50px;
+  color: #00f0ff;
+}
+.hero-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  margin-top: 20px;
+  color: #ccc;
+}
+.hero-image .glow-ring {
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00f0ff, #ff00c8, #00f0ff);
+  background-size: 400% 400%;
+  animation: glow 6s ease infinite;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3),
+              0 0 50px rgba(255, 0, 200, 0.2);
+}
+.glow-ring img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #0f172a;
+  object-fit: cover;
+}
+@keyframes glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+section {
+  padding: 40px 80px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+.grid div {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.grid div i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #00f0ff;
+}
